@@ -1,0 +1,133 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Blackjack Card Counter</title>
+  <script type='text/javascript' src='blackjack.js'></script>
+  <link rel="stylesheet" type="text/css" href="blackjack.css">
+</head>
+<body>
+
+  <div id="topNav">Blackjack Card Counter and Simulator</div>
+  <div id="counter-div">
+    <p id="count">Running Count: 0</p>
+    <div id="refresh-div">
+      <button id="refresh-button" onclick="window.location.reload()">Reshuffle Deck</button>
+    </div>
+  </div>
+  <!-- RUN SIMULATION HERE -->
+  <div id="simulation-div-tot">
+    Simulation Runner
+    <div id="sim-header">
+      <br>
+      <input type="text" placeholder="How many times?" id="sim-input">
+      <br>
+      <br>
+      <button id="stand-simulation-button" onclick="hundredTimesStand(dealerHandTotal, playerHandTotal)">STAND</button>
+      <br>
+      <br>
+      <button id="hit-simulation-button" onclick="hundredTimesHit(dealerHandTotal, playerHandTotal)">HIT ONCE THEN STAND</button>
+    </div>
+    <div id="percent-win"></div>
+    <br>
+    <table id="sim-totals-table">
+      <tr>
+        <th>Total Games</th>
+        <td id="simGames">-------</td>
+      </tr>
+      <tr>
+        <th>Total Wins</th>
+        <td id="simWins">-------</td>
+      </tr>
+      <tr>
+        <th>Total Losses</th>
+        <td id="simLosses">-------</td>
+      </tr>
+      <tr>
+        <th>Total Ties</th>
+        <td id="simTies">-------</td>
+      </tr>
+      <tr>
+        <th>Percent Wins</th>
+        <td id="simPercent">-------</td>
+      </tr>
+    </table>
+    <br>
+    <table id="simulation-table">
+      <tr>
+        <th>Player Hand</th>
+        <th>Dealer Hand</th>
+        <th>Player Result</th>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div id="middle">
+    <h2>Dealer's Hand</h2>
+    <div id="dealer-card">
+      <img src="./PNG-cards-1.3/back.jpg" id="dealer-card-source" style="width:100px;">
+    </div>
+    <div id="dealer-hand" class="dealer"></div>
+    <div id="dealer-hand-value" class="dealer">-</div>
+    
+    <h2>Player's Hand</h2>
+    <div id="player-card">
+      <img src="./PNG-cards-1.3/back.jpg" id="player-card-source" style="width:100px;">
+    </div>
+    <div id="player-hand" class="player"></div>
+    <div id="player-hand-value" class="player">-</div>
+    <div id="player-bust" class="player"></div>
+
+
+    <div id="options" class="options-buttons">
+      <button id="hit" onclick="hit()">Hit Me</button>
+      <button id="stand" onclick="stand(dealerHandTotal, playerHandTotal)">Stand</button>
+    </div>
+    <br>
+    <div id="betting">
+        <label for="bet-amount">Bet:</label>
+        <input type="text" id="bet-amount" placeholder="Enter Bet Amount">
+    </div>
+    
+    <br>
+    <div id="chips">
+      <br>
+      <button id="one" onclick="chips(1)">$1</button>
+      <button id="five" onclick="chips(5)">$5</button>
+      <button id="two-five" onclick="chips(25)">$25</button>
+      <button id="hundred" onclick="chips(100)">$100</button>
+      <button id="five-hundred" onclick="chips(500)">$500</button>
+    </div>
+    <div id="cash">
+      <tr>
+        <tc>
+          <h3 id="bank-amount">Bank: $1000</h3>
+        </tc>
+        <tc>
+        </tc>
+        <tc>
+        </tc>
+      </tr>
+    </div>
+
+    <div class="deal-button-div">
+      <button id="deal" onclick="deal()" class="deal-button ">Deal</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

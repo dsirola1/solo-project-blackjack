@@ -1,0 +1,260 @@
+h1 {
+  color: rgb(43, 25, 4);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.dealer {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.dealer-hand {
+  border-style: dashed;
+  border: darkblue;
+}
+#dealer-card {
+  display: flex;
+  justify-content: center;
+}
+#player-card {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.player-bust {
+  font-size: 200px;
+  color: red;
+  background-color: red;
+}
+
+.options-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#hit {
+  border-radius: 20px;
+  border-color: darkblue;
+  background-color: green;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+
+#hit:hover {
+  border-radius: 20px;
+  border-color: darkblue;
+  background-color: rgb(81, 181, 81);
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+
+
+#stand {
+  border-color: darkblue;
+  background-color: red;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+#stand:hover {
+  border-color: darkblue;
+  background-color: rgb(220, 101, 101);
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 20px;
+  outline: none;
+}
+
+#betting {
+  display: flex;
+  justify-content: center;
+}
+
+#cash {
+  display: flex;
+  justify-content: center;
+}
+
+#bank-amount {
+  padding: 10px;
+}
+
+#chips {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+#one {
+  font-size: 15px;
+  background-color:#fff;
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+  margin-right: 10px;
+}
+#one:hover {
+  font-size: 15px;
+  background-color:rgb(171, 117, 117);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+  margin-right: 10px;
+}
+#five {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(203, 56, 56);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#five:hover {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(218, 134, 134);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#two-five {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(30, 174, 44);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#two-five:hover {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(124, 177, 129);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#hundred {
+  margin-right: 10px;
+  font-size: 15px;
+  color: #fff;
+  background-color:rgb(21, 5, 5);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#hundred:hover {
+  margin-right: 10px;
+  font-size: 15px;
+  color: #fff;
+  background-color:rgb(72, 62, 62);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#five-hundred {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(150, 63, 213);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+#five-hundred:hover {
+  margin-right: 10px;
+  font-size: 15px;
+  background-color:rgb(153, 122, 176);
+  border:3px solid rgb(18, 1, 1);    
+  height:50px;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  width:50px;
+  outline: none;
+}
+
+/* #deal {
+  display: flex;
+  justify-content: center;
+} */
+.deal-button-div {
+  display: flex;
+  justify-content: center;
+}
+.deal-button {
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: brown;
+  outline: 30px blue;
+}
+.deal-button:hover {
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: rgb(203, 100, 100);
+
+}
+body {
+  background-color: rgb(233, 131, 91);
+}
+
+
+
+
+
+
