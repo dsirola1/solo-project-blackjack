@@ -1,26 +1,57 @@
-import React, { useState, useEffect, useImperativeHandle } from "react";
+import { React, useState, useEffect } from "react";
 import axios from "axios";
+import "./index.css";
 
 const url = "https://jsonplaceholder.typicode.com/todos";
 
 export default function Todos() {
   const [tasks, setTasks] = useState([]);
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
-    axios.get(url).then((res) => {
-      const responseTodos = res.data;
-      setTasks(responseTodos);
-    });
+    // axios
+    //   .get(url)
+    //   .then((res) => {
+    //     const taskResponse = res.data;
+    //     console.log(taskResponse);
+    //     setTasks(taskResponse);
+    //   })
+    //   .catch((err) => console.log("error from API request"));
+    fetch(url)
+      .then((res) => res.json())
+      .then((result) => {
+        setIsLoaded(true);
+        setTasks(result);
+      })
+      .catch((err) => console.log(err));
   }, []);
-
   return (
     <div>
-      {tasks.map((task, taskIdx) => {
-        const { title, userId } = task;
-        return <div>{title}</div>;
+      {tasks.map((task, taskIndex) => {
+        const { userId, title } = task;
+        return (
+          <div key={taskIndex}>
+            <h1>{title}</h1>
+            <h1>{userId}</h1>
+          </div>
+        );
       })}
+      <h1>This is the todos page</h1>
     </div>
   );
 }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//
 //
 //
 //
